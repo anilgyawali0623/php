@@ -1,0 +1,166 @@
+/*
+External CSS
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(47, 47, 61);
+  /* To center the form box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 10px;
+}
+
+.login-box {
+  display: flex;
+  width: 600px;
+  height: fit-content;
+  border: 4px;
+  border-radius: 20px;
+  background-color: rgb(224, 224, 224);
+  color: white;
+  padding-left: 80px;
+  padding-right: 60px;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-block: 10px;
+}
+
+.name,
+.phone,
+.emaill,
+.address,
+.skill,
+.gender,
+.hobbies,
+.country {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 350px;
+  border: 1px solid;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  margin-block: 5px;
+}
+
+.fies {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  height: 70px;
+  padding: 10px;
+}
+
+label {
+  margin-block: 5px;
+}
+.skl {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  height: 70px;
+  padding: 10px;
+}
+
+.gies {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  width: 1px;
+  height: 70px;
+  padding: 10px;
+}
+
+select {
+  width: 200px;
+}
+
+#countri {
+  border-radius: 5px;
+}
+
+.submit {
+  padding-left: 140px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+    transition: 0.4s all ease;
+}
+
+  button:hover{
+     opacity: 0.6;
+  }
+
+.newcount {
+  display: flex;
+  flex-direction: row;
+}
+
+#error1,
+#error2,
+#error3,
+#error4,
+#error5,
+#error6,
+#error8,
+#error7 {
+  color: red;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}

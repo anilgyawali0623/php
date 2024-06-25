@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application 1</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form method="POST" onsubmit="return validate()" action="form.php">
+    <!-- login box -->
+    <div class="login-box">
+        <!-- heading -->
+        <h1>FORM</h1>
+        <!-- name -->
+          <div class="login-content">
+
+              <div class="name">
+                  <label>Name :</label>
+                  <input type="text" id="name" name="firstField" placeholder="Enter your Name">
+                  <p id="error1"></p>
+                </div>
+                <!-- phone number -->
+                <div class="phone">
+                    <label>Phone :</label>
+                    <input type="text" id="phone" name="secondField" placeholder="Enter your Phone number">
+                    <p id="error2"></p>
+                </div>
+                <!-- email -->
+                <div class="emaill">
+                    <label>Email :</label>
+                    <input type="email" id="email" name="thirdField" placeholder="Enter your Email">
+                    <p id="error3"></p>
+                </div>
+        <!-- gender -->
+        <div class="gender">
+            <fieldset class="gies">
+                <legend>Gender</legend>
+                <input type="radio" name="Gender" id="male" value="male"><label for="male">Male</label>
+                <input type="radio" name="Gender" id="female"  value="female"><label for="female">Female</label>
+            </fieldset>
+            <p id="error4"></p>
+        </div>
+        <!-- address -->
+        <div class="address">
+        <label>Address :</label>
+        <input type="text" id="address" name="fifthField" placeholder="Enter your Address">
+        <p id="error5"></p>
+    </div>
+        <!-- hobbies -->
+        <div class="hobbies">
+            <fieldset class="fies">
+                <legend>Hobbies</legend>
+                <input type="checkbox" name="hobs[]" id="football" value="football" ><label for="Football">Football</label>
+                <input type="checkbox" name="hobs[]" id="basketball" value="basketball" ><label for="Basketball">Basketball</label>
+                <input type="checkbox" name="hobs[]" id="table-tennis" value="table-tennis" ><label for="TableTennis">Table-Tennis</label>
+                <input type="checkbox" name="hobs[]" id="guitar" value="guitar" ><label for="Guitar">Guitar</label>
+            </fieldset>
+            <p id="error6"></p>
+        </div>
+        <!-- skills -->
+        <div class="skills">
+            <fieldset class="skl">
+                <legend>Skills</legend>
+                <input type="checkbox" name="skll[]" id="c" value="C"><label for="c">C</label>
+                <input type="checkbox" name="skll[]" id="c++" value="C++"><label for="c++">C++</label>
+                <input type="checkbox" name="skll[]" id="htmlcss" value="HTML & CSS"><label for="htmlcss">HTML & CSS</label>
+                <input type="checkbox" name="skll[]" id="python" value="Python"><label for="python">Python</label>
+            </fieldset>
+            <p id="error7"></p>
+        </div>
+        <!-- country -->
+        <div class="country">
+            <label>Country :</label>
+            <div class="newcount">
+                <select id="countri" name="contree">
+                    <option value="">Select your country</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Korea">Korea</option>
+                </select>
+                <p id="error8"></p>
+            </div>
+        </div>
+        <!-- submit button -->
+        <div class="submit">
+            <!-- <button type="submit">Submit</button> -->
+            <button onclick="validate()">Submit</button>
+        </div>
+    </div>
+    </div>
+</form>
+    <!-- Link to External JavaScript File -->
+    <script src="index.js"></script>
+</body>
+</html>
